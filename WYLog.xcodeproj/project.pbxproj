@@ -12,6 +12,8 @@
 		E33C8DEC20492E710000D36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C8DEA20492E710000D36E /* Main.storyboard */; };
 		E33C8DEE20492E710000D36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33C8DED20492E710000D36E /* Assets.xcassets */; };
 		E33C8DF120492E710000D36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C8DEF20492E710000D36E /* LaunchScreen.storyboard */; };
+		E33C8DF920492F5B0000D36E /* WYLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C8DF820492F5B0000D36E /* WYLogUtil.swift */; };
+		E3E1A95520494311006F6DFD /* WYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E1A95420494311006F6DFD /* WYPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		E33C8DED20492E710000D36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E33C8DF020492E710000D36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33C8DF220492E710000D36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33C8DF820492F5B0000D36E /* WYLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYLogUtil.swift; sourceTree = "<group>"; };
+		E3E1A95220494311006F6DFD /* WYLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYLog-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3E1A95320494311006F6DFD /* WYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPerson.h; sourceTree = "<group>"; };
+		E3E1A95420494311006F6DFD /* WYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,14 @@
 			children = (
 				E33C8DE620492E710000D36E /* AppDelegate.swift */,
 				E33C8DE820492E710000D36E /* ViewController.swift */,
+				E3E1A95320494311006F6DFD /* WYPerson.h */,
+				E3E1A95420494311006F6DFD /* WYPerson.m */,
 				E33C8DEA20492E710000D36E /* Main.storyboard */,
 				E33C8DED20492E710000D36E /* Assets.xcassets */,
 				E33C8DEF20492E710000D36E /* LaunchScreen.storyboard */,
 				E33C8DF220492E710000D36E /* Info.plist */,
+				E33C8DF820492F5B0000D36E /* WYLogUtil.swift */,
+				E3E1A95220494311006F6DFD /* WYLog-Bridging-Header.h */,
 			);
 			path = WYLog;
 			sourceTree = "<group>";
@@ -74,6 +84,7 @@
 				E33C8DDF20492E710000D36E /* Sources */,
 				E33C8DE020492E710000D36E /* Frameworks */,
 				E33C8DE120492E710000D36E /* Resources */,
+				E374A51A2049755400D9C05F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					E33C8DE220492E710000D36E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,11 +143,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E374A51A2049755400D9C05F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"王启镰\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E33C8DDF20492E710000D36E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E1A95520494311006F6DFD /* WYPerson.m in Sources */,
+				E33C8DF920492F5B0000D36E /* WYLogUtil.swift in Sources */,
 				E33C8DE920492E710000D36E /* ViewController.swift in Sources */,
 				E33C8DE720492E710000D36E /* AppDelegate.swift in Sources */,
 			);
@@ -274,12 +304,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K775G7S2W4;
 				INFOPLIST_FILE = WYLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wy.WYLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WYLog/WYLog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +322,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K775G7S2W4;
 				INFOPLIST_FILE = WYLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wy.WYLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WYLog/WYLog-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
