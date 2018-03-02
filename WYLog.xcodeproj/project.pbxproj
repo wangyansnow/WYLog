@@ -13,6 +13,7 @@
 		E33C8DEE20492E710000D36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33C8DED20492E710000D36E /* Assets.xcassets */; };
 		E33C8DF120492E710000D36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C8DEF20492E710000D36E /* LaunchScreen.storyboard */; };
 		E33C8DF920492F5B0000D36E /* WYLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C8DF820492F5B0000D36E /* WYLogUtil.swift */; };
+		E374A51C204989EA00D9C05F /* xx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374A51B204989EA00D9C05F /* xx.swift */; };
 		E3E1A95520494311006F6DFD /* WYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E1A95420494311006F6DFD /* WYPerson.m */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		E33C8DF020492E710000D36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33C8DF220492E710000D36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33C8DF820492F5B0000D36E /* WYLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYLogUtil.swift; sourceTree = "<group>"; };
+		E374A51B204989EA00D9C05F /* xx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xx.swift; sourceTree = "<group>"; };
 		E3E1A95220494311006F6DFD /* WYLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYLog-Bridging-Header.h"; sourceTree = "<group>"; };
 		E3E1A95320494311006F6DFD /* WYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPerson.h; sourceTree = "<group>"; };
 		E3E1A95420494311006F6DFD /* WYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYPerson.m; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E33C8DF220492E710000D36E /* Info.plist */,
 				E33C8DF820492F5B0000D36E /* WYLogUtil.swift */,
 				E3E1A95220494311006F6DFD /* WYLog-Bridging-Header.h */,
+				E374A51B204989EA00D9C05F /* xx.swift */,
 			);
 			path = WYLog;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				E3E1A95520494311006F6DFD /* WYPerson.m in Sources */,
 				E33C8DF920492F5B0000D36E /* WYLogUtil.swift in Sources */,
+				E374A51C204989EA00D9C05F /* xx.swift in Sources */,
 				E33C8DE920492E710000D36E /* ViewController.swift in Sources */,
 				E33C8DE720492E710000D36E /* AppDelegate.swift in Sources */,
 			);
